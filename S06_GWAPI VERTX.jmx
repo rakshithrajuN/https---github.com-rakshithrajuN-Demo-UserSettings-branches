@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="P_HostName" elementType="Argument">
+            <stringProp name="Argument.name">P_HostName</stringProp>
+            <stringProp name="Argument.value">apim-zee5-qa-ci1-csvc-0001.azure-api.net</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T04_xaccessToken" elementType="Argument">
+            <stringProp name="Argument.name">P_T04_xaccessToken</stringProp>
+            <stringProp name="Argument.value">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInBsYXRmb3JtX2NvZGUiOiJXZWJAJCF0Mzg3MTIiLCJpc3N1ZWRBdCI6IjIwMjMtMDItMDhUMDI6MTU6MjEuMDA5WiIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY3NTgyMjUyMX0.Uzk6kJ54D7HR69FnNMRx86OoZx0AA6v_RohJlGk4__U</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T04_Cookie" elementType="Argument">
+            <stringProp name="Argument.name">P_T04_Cookie</stringProp>
+            <stringProp name="Argument.value">AWSALB=kdzIkZR9eZ5AsaxpYOS2DBXSO/Xm4HP/K5ilkpt0OzRWs4KLA5OmduyEwmyJqmQ4cCy2JwzKtXIhvoma4wN/vYLLPB025OlLEzq6ucQXoOZCaCqZgPEREDOE6XDf; AWSALBCORS=kdzIkZR9eZ5AsaxpYOS2DBXSO/Xm4HP/K5ilkpt0OzRWs4KLA5OmduyEwmyJqmQ4cCy2JwzKtXIhvoma4wN/vYLLPB025OlLEzq6ucQXoOZCaCqZgPEREDOE6XDf; AWSALB=q0J+h7sqfoV2nSnNK7zjP5gKn4dtRPdL0fpc/EINh30vYYj2Qy70XcFtYX9WKEAWBgcDMK1y8B+MFG5pHYdYlLisXAFgiYLC/zplW3n0gjKhpdH/7sp6ASbCPF1b; AWSALBCORS=q0J+h7sqfoV2nSnNK7zjP5gKn4dtRPdL0fpc/EINh30vYYj2Qy70XcFtYX9WKEAWBgcDMK1y8B+MFG5pHYdYlLisXAFgiYLC/zplW3n0gjKhpdH/7sp6ASbCPF1b</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T02_xaccessToken" elementType="Argument">
+            <stringProp name="Argument.value">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInBsYXRmb3JtX2NvZGUiOiJXZWJAJCF0Mzg3MTIiLCJpc3N1ZWRBdCI6IjIwMjItMTItMjBUMDc6NTc6MjcuMTQ3WiIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY3MTUyMzA0N30.Cgi5kj5DLLznP7amXGUCroi2REBx_xDZPqxnv4dHziA</stringProp>
+            <stringProp name="Argument.name">P_T02_xaccessToken</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T06_xaccessToken" elementType="Argument">
+            <stringProp name="Argument.name">P_T06_xaccessToken</stringProp>
+            <stringProp name="Argument.value">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybV9jb2RlIjoiV2ViQCQhdDM4NzEyIiwiaXNzdWVkQXQiOiIyMDIzLTA4LTAyVDAzOjU1OjE5LjUzOFoiLCJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY5MDk0ODUxOX0.8gQYSM38T4lfaiL8B55_zZtX97CaT_JHrv45X_UOCjg</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T06_Cookie" elementType="Argument">
+            <stringProp name="Argument.name">P_T06_Cookie</stringProp>
+            <stringProp name="Argument.value">_abck=024EBB62F16FCB5F015D61976D84D5BE~-1~YAAQNK1NaGt+OpmBAQAA68130gieZ20hjxwAl7fS6Xv7FNuB/xhOd5NZBmVZbEICToTql73rypPt95hoDDzSH1uVtTPy0ihLPrK/VupeWXVAC1Z2RGzmX0f2MgRpCeCErTPpzpn9fO9LUnQeVCeHeAf80bnjLWVbJQInsUhnrcmUkp0dOyp9WuvpofvC7mNJaClAAWmjT+sgTEKgt14pccIJlD/T6RnrwClt9usz5JXiXtgremDonjM1f3St7cGcoPaJdBRPdAn/FVcnDDZ3Mc5Go8IDvKn7yohZzIhvkRo3cF/Cr0OjqnTAvDhuObagDRt1TPslf9GqHi6sk9cRzsG2Nt7o39otSt+WQ9ViBVxFjXIV9DD+QBC6KkVOmyWPhTRcU+g=~-1~-1~-1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T07_xaccessToken" elementType="Argument">
+            <stringProp name="Argument.value">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybV9jb2RlIjoiV2ViQCQhdDM4NzEyIiwiaXNzdWVkQXQiOiIyMDIzLTA3LTEyVDA2OjU4OjAxLjc3MVoiLCJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY4OTE0NTA4MX0.hgwjtWQYI5ZuTFD6uvBJXm2yJoAl6PRGFDTRaFt0Ncg</stringProp>
+            <stringProp name="Argument.name">P_T07_xaccessToken</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T08_xaccessToken" elementType="Argument">
+            <stringProp name="Argument.value">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybV9jb2RlIjoiV2ViQCQhdDM4NzEyIiwiaXNzdWVkQXQiOiIyMDIzLTA4LTA4VDAwOjA2OjA1Ljc0N1oiLCJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY5MTQ1MzE2NX0.pTDKwOq4K7yLpXgHa-iHQh1tfS3xhxB-oxn67I4q2uE</stringProp>
+            <stringProp name="Argument.name">P_T08_xaccessToken</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T05_xaccessToken" elementType="Argument">
+            <stringProp name="Argument.name">P_T05_xaccessToken</stringProp>
+            <stringProp name="Argument.value"> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybV9jb2RlIjoiV2ViQCQhdDM4NzEyIiwiaXNzdWVkQXQiOiIyMDIzLTA4LTA4VDAwOjA2OjA1Ljc0N1oiLCJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY5MTQ1MzE2NX0.pTDKwOq4K7yLpXgHa-iHQh1tfS3xhxB-oxn67I4q2uE</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_T05_Cookie" elementType="Argument">
+            <stringProp name="Argument.name">P_T05_Cookie</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.value">_abck=024EBB62F16FCB5F015D61976D84D5BE~-1~YAAQZpYRYF8ayyOBAQAAOKW+NwjqPgvf+K7AEicRjd3Np7Zq1S3kxClSkMhqiBm7fUOmMD+nCOqHcspbNyA1tmUKsEtVlB2kb85e9R70/0rimVg5GDeiV1yTEi7hVmwsOW6CNF8nc4fWhhh1pQkKG9FRuQPc/b0CMuFQx4LIhLWHa0w3e52DZdcJ4ayjywTNrgPM9Jyg7CCcftTHEmeBMdzsrsas2YygM8Pdfyz05LBHA6iyrGBzhStdZ6wtvYzjTD2enur5vgj8vAXsrAWLUBpgTJ6eLh2H75O9LYpIo0DsIiHU0tnPPLnPjBU34YF/6UimvV1d5xVq3eLfHLFwIHTA20Xa1ARaAcANI0FVyD7Eamv/zKELOOaMHU2BJd0pihc9uBo=~-1~-1~-1</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="S06_GWAPI Vertex" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <stringProp name="LoopController.loops">1</stringProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.delayedStart">false</boolProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="P_T02_sort_order" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_sort_order</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">asc</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_page" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_page</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_translation" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_translation</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">en</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_page_size" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_page_size</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">50</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_country" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_country</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">IN</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_asset_subtype" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_asset_subtype</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">movie</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_sort_by_field" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_sort_by_field</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">release_date</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_version" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_version</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">2</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_actors" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_actors</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">Amitabh%20Bachchan,Anupam%20Kher,Boman%20Irani,Parineeti%20Chopra,Danny%20Denzongpa,Neena%20Gupta,Sooraj%20R%20Barjatya</stringProp>
+            </elementProp>
+            <elementProp name="P_T02_actors_type" elementType="Argument">
+              <stringProp name="Argument.name">P_T02_actors_type</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">all</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_season_id" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_season_id</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">0-2-3337</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_type" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_type</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">episode</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_translation" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_translation</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">en</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_country" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_country</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">IN</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_on_air" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_on_air</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">true</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_asset_subtype" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_asset_subtype</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">tvshow</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_page" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_page</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_limit" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_limit</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">20</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_content_id" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_content_id</stringProp>
+              <stringProp name="Argument.value">0-0-partner</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_country" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_country</stringProp>
+              <stringProp name="Argument.value">IN</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_limit" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_limit</stringProp>
+              <stringProp name="Argument.value">20</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_sortbyfield" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_sortbyfield</stringProp>
+              <stringProp name="Argument.value">releasedate</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_business_type" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_business_type</stringProp>
+              <stringProp name="Argument.value">free,advertisement_downloadable,advertisement, premium, premium_downloadable</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_languages" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_languages</stringProp>
+              <stringProp name="Argument.value">te ,ml, kn, hr, ta, gu, en, hi,mr,bn,or,pa,ar,de,id,ms,ru,th</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_audio_lang" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_audio_lang</stringProp>
+              <stringProp name="Argument.value">te ,ml, kn, hr, ta, gu, en, hi,mr,bn,or,pa,ar,de,id,ms,ru,th</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_free_trial" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_free_trial</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_translation" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_translation</stringProp>
+              <stringProp name="Argument.value">en</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_asset_type" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_asset_type</stringProp>
+              <stringProp name="Argument.value">0,1,2,6,8,9,10,11,15,16,100,101</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_asset_subtype" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_asset_subtype</stringProp>
+              <stringProp name="Argument.value">tvshow,movie,trailer,episode,mobisode,clip,webisode,preview,original,promo,video,manual,automatic,genrepage,languagepage,infopage,external_link,paymentprovider</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_genres" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_genres</stringProp>
+              <stringProp name="Argument.value">romance</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_page" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_page</stringProp>
+              <stringProp name="Argument.value">2</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_sort_order" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_sort_order</stringProp>
+              <stringProp name="Argument.value">desc</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T07_tgygdsdjnf" elementType="Argument">
+              <stringProp name="Argument.name">P_T07_tgygdsdjnf</stringProp>
+              <stringProp name="Argument.value">fdfg</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_page" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_page</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_limit" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_limit</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">25</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_country" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_country</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">IN</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_translation" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_translation</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">en</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_episode_id" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_episode_id</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">0-1-6z5227270</stringProp>
+            </elementProp>
+            <elementProp name="P_xaccessToken" elementType="Argument">
+              <stringProp name="Argument.value">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybV9jb2RlIjoiV2ViQCQhdDM4NzEyIiwiaXNzdWVkQXQiOiIyMDIzLTA3LTI2VDAxOjE3OjA3Ljc5OVoiLCJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY5MDMzNDIyN30.z3zV23V8JYy6fGbtzrjsTcod2x-C-Sf9Dn7rcL2urd4</stringProp>
+              <stringProp name="Argument.name">P_xaccessToken</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_country" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_country</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">IN</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_translation" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_translation</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">en</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_languages" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_languages</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">ta</stringProp>
+            </elementProp>
+            <elementProp name="P_T08_version" elementType="Argument">
+              <stringProp name="Argument.name">P_T08_version</stringProp>
+              <stringProp name="Argument.value">12</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="P_T06_Cookie" elementType="Argument">
+              <stringProp name="Argument.name">P_T06_Cookie</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">_abck=024EBB62F16FCB5F015D61976D84D5BE~-1~YAAQNK1NaGt+OpmBAQAA68130gieZ20hjxwAl7fS6Xv7FNuB/xhOd5NZBmVZbEICToTql73rypPt95hoDDzSH1uVtTPy0ihLPrK/VupeWXVAC1Z2RGzmX0f2MgRpCeCErTPpzpn9fO9LUnQeVCeHeAf80bnjLWVbJQInsUhnrcmUkp0dOyp9WuvpofvC7mNJaClAAWmjT+sgTEKgt14pccIJlD/T6RnrwClt9usz5JXiXtgremDonjM1f3St7cGcoPaJdBRPdAn/FVcnDDZ3Mc5Go8IDvKn7yohZzIhvkRo3cF/Cr0OjqnTAvDhuObagDRt1TPslf9GqHi6sk9cRzsG2Nt7o39otSt+WQ9ViBVxFjXIV9DD+QBC6KkVOmyWPhTRcU+g=~-1~-1~-1</stringProp>
+            </elementProp>
+            <elementProp name="P_T04_Cookie" elementType="Argument">
+              <stringProp name="Argument.name">P_T04_Cookie</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">AWSALB=kdzIkZR9eZ5AsaxpYOS2DBXSO/Xm4HP/K5ilkpt0OzRWs4KLA5OmduyEwmyJqmQ4cCy2JwzKtXIhvoma4wN/vYLLPB025OlLEzq6ucQXoOZCaCqZgPEREDOE6XDf; AWSALBCORS=kdzIkZR9eZ5AsaxpYOS2DBXSO/Xm4HP/K5ilkpt0OzRWs4KLA5OmduyEwmyJqmQ4cCy2JwzKtXIhvoma4wN/vYLLPB025OlLEzq6ucQXoOZCaCqZgPEREDOE6XDf; AWSALB=q0J+h7sqfoV2nSnNK7zjP5gKn4dtRPdL0fpc/EINh30vYYj2Qy70XcFtYX9WKEAWBgcDMK1y8B+MFG5pHYdYlLisXAFgiYLC/zplW3n0gjKhpdH/7sp6ASbCPF1b; AWSALBCORS=q0J+h7sqfoV2nSnNK7zjP5gKn4dtRPdL0fpc/EINh30vYYj2Qy70XcFtYX9WKEAWBgcDMK1y8B+MFG5pHYdYlLisXAFgiYLC/zplW3n0gjKhpdH/7sp6ASbCPF1b</stringProp>
+            </elementProp>
+            <elementProp name="P_T04_list_type" elementType="Argument">
+              <stringProp name="Argument.name">P_T04_list_type</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">abxscdf</stringProp>
+            </elementProp>
+            <elementProp name="P_T04_sort_order" elementType="Argument">
+              <stringProp name="Argument.name">P_T04_sort_order</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">ASC</stringProp>
+            </elementProp>
+            <elementProp name="P_T04_country" elementType="Argument">
+              <stringProp name="Argument.name">P_T04_country</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">IN</stringProp>
+            </elementProp>
+            <elementProp name="P_T04_genres" elementType="Argument">
+              <stringProp name="Argument.name">P_T04_genres</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">Malayalam%2CEntertainment%2COdiya</stringProp>
+            </elementProp>
+            <elementProp name="P_T04_translation" elementType="Argument">
+              <stringProp name="Argument.name">P_T04_translation</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">th</stringProp>
+            </elementProp>
+            <elementProp name="P_T04_sort_by_field" elementType="Argument">
+              <stringProp name="Argument.name">P_T04_sort_by_field</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">title</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="S06_GWAPI Vertx_T01_GetTVShowByGenres" enabled="true">
+          <stringProp name="filename">S06_GWAPI Vertx_T01_GetTVShowByGenres.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">P_T01_country,P_T01_translation</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="S06_GWAPI Vertx_T02_GetMoviesByActors" enabled="true">
+          <stringProp name="filename">S06_GWAPI Vertx_T02_GetMoviesByActors.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">P_T02_sort_order,P_T02_page,P_T02_translation,P_T02_page_size	,P_T02_country,P_T02_asset_subtype,P_T02_sort_by_field,P_T02_version,P_T02_actors,P_T02_actors_type </stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="S06_GWAPI Vertx_T04_GetChannelsByGenres" enabled="true">
+          <stringProp name="filename">S06_GWAPI Vertx_T04_GetChannelsByGenres.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">P_T04_list_type,P_T04_sort_order,P_T04_country,P_T04_genres,P_T04_translation,P_T04_sort_by_field</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="S06_GWAPI Vertx_T05_GetTVShowsByShowID" enabled="true">
+          <stringProp name="filename">S06_GWAPI Vertx_T05_GetTVShowsByShowID.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">P_T05_limit,P_T05_version,P_T05_translation,P_T05_country,P_T05_page,P_T05_languages,P_T05_greet </stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="S06_GWAPI Vertx_T06_GetTVShowsBySeasonID" enabled="true">
+          <stringProp name="filename">S06_GWAPI Vertx_T06_GetTVShowsBySeasonID.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">P_T06_season_id,P_T06_type,P_T06_translation,P_T06_country,P_T06_on_air,P_T06_asset_subtype,P_T06_page,P_T06_limit </stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="S06_GWAPI Vertx_T07_GetContentDetailsAPI" enabled="true">
+          <stringProp name="filename">S06_GWAPI Vertx_T07_GetContentDetailsAPI.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">P_T07_country,P_T07_languages,P_T07_translation,P_T07_version </stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="S06_GWAPI Vertx_T08_SeasonNextPrevious" enabled="true">
+          <stringProp name="filename">S06_GWAPI Vertx_T08_SeasonNextPrevious.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">P_T08_page,P_T08_limit,P_T08_country,P_T08_translation,P_T08_episode_id </stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T01_GetTVShowByGenres" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T01_GetTVShowByGenres" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="country" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">country</stringProp>
+                  <stringProp name="Argument.value">${P_T01_country}</stringProp>
+                </elementProp>
+                <elementProp name="translation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">translation</stringProp>
+                  <stringProp name="Argument.value">${P_T01_translation}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/v1/tvshow/genres</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">PostmanRuntime/7.35.0</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T02_GetMoviesByActors" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T02_GetMoviesByActors" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="sort_order" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">sort_order</stringProp>
+                  <stringProp name="Argument.value">${P_T02_sort_order}</stringProp>
+                </elementProp>
+                <elementProp name="page" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page</stringProp>
+                  <stringProp name="Argument.value">${P_T02_page}</stringProp>
+                </elementProp>
+                <elementProp name="translation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">translation</stringProp>
+                  <stringProp name="Argument.value">${P_T02_translation}</stringProp>
+                </elementProp>
+                <elementProp name="page_size" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page_size</stringProp>
+                  <stringProp name="Argument.value">${P_T02_page_size}</stringProp>
+                </elementProp>
+                <elementProp name="country" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">country</stringProp>
+                  <stringProp name="Argument.value">${P_T02_country}</stringProp>
+                </elementProp>
+                <elementProp name="asset_subtype" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">asset_subtype</stringProp>
+                  <stringProp name="Argument.value">${P_T02_asset_subtype}</stringProp>
+                </elementProp>
+                <elementProp name="sort_by_field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">sort_by_field</stringProp>
+                  <stringProp name="Argument.value">${P_T02_sort_by_field}</stringProp>
+                </elementProp>
+                <elementProp name="version" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">version</stringProp>
+                  <stringProp name="Argument.value">${P_T02_version}</stringProp>
+                </elementProp>
+                <elementProp name="actors" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">actors</stringProp>
+                  <stringProp name="Argument.value">${P_T02_actors}</stringProp>
+                </elementProp>
+                <elementProp name="actors_type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">actors_type</stringProp>
+                  <stringProp name="Argument.value">${P_T02_actors_type}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/v1/movie</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">x-access-token</stringProp>
+                  <stringProp name="Header.value">${P_T02_xaccessToken}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1068306684">&quot;items&quot;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T03_GetMoviesById" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T03_GetMoviesById" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/v1/movie</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Host</stringProp>
+                  <stringProp name="Header.value">&lt;calculated when request is sent&gt;</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">User-Agent</stringProp>
+                  <stringProp name="Header.value">PostmanRuntime/7.35.0</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Accept-Encoding</stringProp>
+                  <stringProp name="Header.value">gzip, deflate, br</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Connection</stringProp>
+                  <stringProp name="Header.value">keep-alive</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T04_GetChannelsByGenres" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T04_GetChannelsByGenres" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="list_type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">list_type</stringProp>
+                  <stringProp name="Argument.value">${P_T04_list_type}</stringProp>
+                </elementProp>
+                <elementProp name="sort_order" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">sort_order</stringProp>
+                  <stringProp name="Argument.value">${P_T04_sort_order}</stringProp>
+                </elementProp>
+                <elementProp name="country" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">country</stringProp>
+                  <stringProp name="Argument.value">${P_T04_country}</stringProp>
+                </elementProp>
+                <elementProp name="genres" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">genres</stringProp>
+                  <stringProp name="Argument.value">${P_T04_genres}</stringProp>
+                </elementProp>
+                <elementProp name="translation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">translation</stringProp>
+                  <stringProp name="Argument.value">${P_T04_translation}</stringProp>
+                </elementProp>
+                <elementProp name="sort_by_field" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">sort_by_field</stringProp>
+                  <stringProp name="Argument.value">${P_T04_sort_by_field}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/v1/channel/bygenre</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.value">${P_T04_xaccessToken}</stringProp>
+                  <stringProp name="Header.name">x-access-token</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">https://www.zee5.com/</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T05_GetTVShowsByShowID" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T05_GetTVShowsByShowID" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="limit" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">limit</stringProp>
+                  <stringProp name="Argument.value">${P_T05_limit}</stringProp>
+                </elementProp>
+                <elementProp name="version" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">version</stringProp>
+                  <stringProp name="Argument.value">${P_T05_version}</stringProp>
+                </elementProp>
+                <elementProp name="translation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">translation</stringProp>
+                  <stringProp name="Argument.value">${P_T05_translation}</stringProp>
+                </elementProp>
+                <elementProp name="country" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">country</stringProp>
+                  <stringProp name="Argument.value">${P_T05_country}</stringProp>
+                </elementProp>
+                <elementProp name="page" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page</stringProp>
+                  <stringProp name="Argument.value">${P_T05_page}</stringProp>
+                </elementProp>
+                <elementProp name="languages" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">languages</stringProp>
+                  <stringProp name="Argument.value">${P_T05_languages}</stringProp>
+                </elementProp>
+                <elementProp name="greet" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">greet</stringProp>
+                  <stringProp name="Argument.value">${P_T05_greet}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/content/tvshow/0-6-1152</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="x-access-token" elementType="Header">
+                  <stringProp name="Header.name">x-access-token</stringProp>
+                  <stringProp name="Header.value">${P_T05_xaccessToken}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T06_GetTVShowsBySeasonID" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T06_GetTVShowsBySeasonID" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="season_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">season_id</stringProp>
+                  <stringProp name="Argument.value">${P_T06_season_id}</stringProp>
+                </elementProp>
+                <elementProp name="type" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">type</stringProp>
+                  <stringProp name="Argument.value">${P_T06_type}</stringProp>
+                </elementProp>
+                <elementProp name="translation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">translation</stringProp>
+                  <stringProp name="Argument.value">${P_T06_translation}</stringProp>
+                </elementProp>
+                <elementProp name="country" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">country</stringProp>
+                  <stringProp name="Argument.value">${P_T06_country}</stringProp>
+                </elementProp>
+                <elementProp name="on_air" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">on_air</stringProp>
+                  <stringProp name="Argument.value">${P_T06_on_air}</stringProp>
+                </elementProp>
+                <elementProp name="asset_subtype" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">asset_subtype</stringProp>
+                  <stringProp name="Argument.value">${P_T06_asset_subtype}</stringProp>
+                </elementProp>
+                <elementProp name="page" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page</stringProp>
+                  <stringProp name="Argument.value">${P_T06_page}</stringProp>
+                </elementProp>
+                <elementProp name="limit" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">limit</stringProp>
+                  <stringProp name="Argument.value">${P_T06_limit}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/content/tvshow/</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">x-access-token</stringProp>
+                  <stringProp name="Header.value">$P_T06_xaccessToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T07_GetContentDetailsAPI" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T07_GetContentDetailsAPI" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="country" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">country</stringProp>
+                  <stringProp name="Argument.value">${P_T07_country}</stringProp>
+                </elementProp>
+                <elementProp name="languages" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">languages</stringProp>
+                  <stringProp name="Argument.value">${P_T07_languages}</stringProp>
+                </elementProp>
+                <elementProp name="translation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">translation</stringProp>
+                  <stringProp name="Argument.value">${P_T07_translation}</stringProp>
+                </elementProp>
+                <elementProp name="version" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">version</stringProp>
+                  <stringProp name="Argument.value">${P_T07_version}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/content/details/0-0-10</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">x-access-token</stringProp>
+                  <stringProp name="Header.value">${P_T07_xaccessToken}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S06_GWAPI Vertx_T08_SeasonNextPrevious" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="S06_GWAPI Vertx_T08_SeasonNextPrevious" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="page" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">page</stringProp>
+                  <stringProp name="Argument.value">${P_T08_page}</stringProp>
+                </elementProp>
+                <elementProp name="limit" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">limit</stringProp>
+                  <stringProp name="Argument.value">${P_T08_limit}</stringProp>
+                </elementProp>
+                <elementProp name="country" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">country</stringProp>
+                  <stringProp name="Argument.value">${P_T08_country}</stringProp>
+                </elementProp>
+                <elementProp name="translation" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">translation</stringProp>
+                  <stringProp name="Argument.value">${P_T08_translation}</stringProp>
+                </elementProp>
+                <elementProp name="episode_id" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">episode_id</stringProp>
+                  <stringProp name="Argument.value">${P_T08_episode_id}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${P_HostName}</stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.path">/gwapivertx/content/season/next_previous/0-2-3337</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">false</boolProp>
+            <boolProp name="HTTPSampler.image_parser">false</boolProp>
+            <boolProp name="HTTPSampler.concurrentDwn">false</boolProp>
+            <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+            <boolProp name="HTTPSampler.md5">false</boolProp>
+            <intProp name="HTTPSampler.ipSourceType">0</intProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">x-access-token</stringProp>
+                  <stringProp name="Header.value">${P_T08_xaccessToken}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
